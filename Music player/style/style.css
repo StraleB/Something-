@@ -1,0 +1,180 @@
+body{
+background: linear-gradient(rgb(68, 93, 163), rgb(42, 98, 161), rgb(48, 124, 77));
+  background-size:cover;
+}
+
+/*Styling the speakers and mainboard*/
+
+.player-container{
+    height: 610px;
+    margin:155px auto;
+    }
+
+
+.left-speaker{
+    float: left;
+    background:rgb(48, 48, 48);
+    height: 610px;
+    width:300px;
+    text-align: center;
+    box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.548);
+}
+
+.main{
+    width:440px;
+    height: 610px;
+    background:rgb(48, 48, 48);
+    margin: 0 auto;
+    box-shadow: inset 4px 1px 8px 0px rgba(0, 0, 0, 0.555);
+   }
+
+.right-speaker{
+    float: right;
+    background:rgb(48, 48, 48);
+    height: 610px;
+    width:300px;
+    margin:-610px 0;
+    text-align: center;
+    box-shadow: inset 4px 2px 10px 0px rgba(0, 0, 0, 0.548);
+}
+
+img[alt="left-speaker"], img[alt="right-speaker"]{
+    margin:200px 0px;
+}
+
+
+img[alt="left-woofer"], img[alt="right-woofer"]{
+margin:6x 0px;
+background-color: rgb(109, 109, 109) ;
+border:1px solid black;
+}
+
+/*designing the main board*/
+
+.left-border, .right-border{
+    border-radius: 5px ;
+    height: 490px;
+    width: 40px;
+    margin:40px 90px;
+    float: left;
+    background-color:rgba(240, 248, 255, 0.062);
+    box-shadow: inset 10px 0.5px 10px 0px rgba(255, 255, 255, 0.226);
+     
+}
+
+.right-border{
+    margin: -403px 90px;
+}
+
+.outerCircle{
+    background: linear-gradient(rgb(117, 117, 117),rgb(117, 117, 117),white,rgb(117, 117, 117),rgb(117, 117, 117));
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+    margin: -60px 198px;
+    text-align: center;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.658);
+    border:1px solid black;
+}
+
+.inner-circle{
+height:35px;
+width: 35px;
+border-radius:90px;
+border:1px solid black;
+margin:5px auto;
+box-shadow: 1px 3px 5px 1px black;
+background: linear-gradient(rgb(117, 117, 117),rgb(117, 117, 117),white,rgb(117, 117, 117),rgb(117, 117, 117));
+}
+
+.volume{
+    background: linear-gradient(rgb(117, 117, 117),rgb(117, 117, 117),white,rgb(117, 117, 117),rgb(117, 117, 117));
+    height: 65px;
+    width: 65px;
+    border-radius: 80px;
+    margin: 100px 193px;
+    text-align: center;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.658);
+    border:1px solid black;
+}
+
+.volume-circle{
+height:50px;
+width: 50px;
+border-radius:90px;
+border:1px solid black;
+margin:5.5px auto;
+box-shadow: 1px 3px 5px 1px black;
+background: linear-gradient(rgb(117, 117, 117),rgb(117, 117, 117),white,rgb(117, 117, 117),rgb(117, 117, 117));
+}
+
+.buttons{
+width: 190px;
+height: 50px;
+margin:-80px 45px;
+text-align: center;
+}
+
+button{
+    height:8px;
+    padding:2px 3px;
+    border-radius: 80px;
+    box-shadow: 1px 1px 4px 0px black;
+    background:linear-gradient(rgb(117, 117, 117),white);
+    border:1px solid rgb(117, 117, 117);
+    margin: 0px 2px;
+     }
+
+     button:active{
+         background:linear-gradient(rgb(117, 117, 117),rgb(117, 117, 117),white);
+     }
+
+/*Buttons for the tape animation and sound*/
+
+.tape-buttons{
+text-align: center;
+margin:-114px 20px;
+width: 400px;
+
+}
+
+.tape-buttons button{
+   background: rgb(146, 137, 137);
+   padding: 2px 2px;
+   height: 30px;
+   width: 40px;
+   border-radius: 0px;
+   font-weight: bolder;
+   margin:0px -0.8px;
+   display: inline-block;
+   box-shadow: 0.2px 0px 8px 0px black;
+   transition: all 0.3s;
+}
+
+.tape-buttons button:active{
+    background:rgb(156, 144, 144);
+    box-shadow: inset 1px 2px 8px 0px black;
+}
+
+/*Animation of the tape*/
+#roll, #scndroll{
+   /* animation-name: spin; */
+	animation-duration: 3s; /* 3 seconds */
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+   }
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+    to { transform: rotate(360deg);}
+}
+
+
+.legs{
+    background: rgb(19, 19, 19);
+    height: 20px;
+    width:50px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: inset 1px 0px 4px 2px rgba(255, 255, 255, 0.13);
+    }

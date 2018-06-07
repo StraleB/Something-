@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Music system</title>
+</head>
+<body>
+    <div class="player-container" style="width:1050px ">
+        <!--Left speaker of the music system-->
+        <section class="left-speaker">
+            <img src="https://preview.ibb.co/bY9thd/0018207_fpr_series_fpr12_02_12_inch_400w_rms_2_shallow_mount_car_audio_subwoofer.png" alt="left-woofer" height="130" width="130">
+        <img src="https://preview.ibb.co/n6mENd/GTO429_sq_001_1_3000x3000_300dpi_dv_HAMaster.png" alt="left-speaker" height="240" width="240">
+        </section>
+        <!--The main edit of the music system and its design-->
+        <section class="main">
+        <div class="left-border"></div>
+        <img src="https://orig00.deviantart.net/2c76/f/2013/103/8/f/equalizer_gif_by_harlequinamidst-d61k0al.gif" alt="radio-menu" height="100" width="160" style="margin: 70px -80px; display: none; border: 1px solid black;">
+        <img src="https://image.ibb.co/d7YVA8/equalizer_gif_by_harlequinamidst_d61k0al.jpg" alt="beginner-Phase"height="100" width="160" style="margin: 70px -80px; border: 1px solid black;" >
+        <div class="outerCircle"><div class="inner-circle"></div></div>
+        <div class="volume"><div class="volume-circle"></div></div>
+       <div class="right-border"></div>
+       <!--Decoration buttons-->
+        <div class="buttons">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                </div>
+<!--Positioning the cassete player-->
+                <div class="Casette-and-Buttons">
+                 <img src="https://preview.ibb.co/ghdUxd/compact_cassette_157537_960_720.png" height="85" width="130" alt="tape" style="margin:128px -62px">
+                 <img src="https://image.ibb.co/nwmv3J/roll_1.png" id="roll" height="15" width="15" style="margin:166px 11px;">
+                 <img src="https://image.ibb.co/nwmv3J/roll_1.png" id="scndroll" height="15" width="15" style="margin:166px -83px;">
+                 <img src="https://image.ibb.co/mSYCHd/boombox_wallpaper_HD3.png" alt="boombox_wallpaper_HD3" border="0" height="100" width="160" style="margin:120px 17px; box-shadow: 0px 1px 4px 0px black">
+                 <div class="tape-buttons">
+                 <button id="play"onmousedown="music.play()">></button>
+                 <button> << </button>
+                 <button> >> </button>
+                 <button  style="color: red;"> • </button>
+                 <button onmousedown="music.pause();" id="pause"> ||</button>
+                 <button style="height: 30px; font-size: 10px;">  ⬛ </button>
+                 </div>
+                </div>
+
+        </section>
+
+        <!--Right speaker of the music system-->
+        <section class="right-speaker">
+                <img src="https://preview.ibb.co/bY9thd/0018207_fpr_series_fpr12_02_12_inch_400w_rms_2_shallow_mount_car_audio_subwoofer.png" alt="right-woofer" height="130" width="130">
+            <img src="https://preview.ibb.co/n6mENd/GTO429_sq_001_1_3000x3000_300dpi_dv_HAMaster.png" alt="right-speaker"  height="240" width="240">
+        </section>
+
+            <!--Legs of the system-->
+    <div class="legs" style="margin: 0px 10px;"></div>
+    <div class="legs"  style="margin: -20px 230px;"></div>
+    <div class="legs"  style="margin: 0px 320px;"></div>
+    <div class="legs"  style="margin: -20px 680px;"></div>
+    <div class="legs"  style="margin: 0px 770px;"></div>
+    <div class="legs"  style="margin: -20px 990px;"></div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
